@@ -1,0 +1,24 @@
+{
+  "name": "serverless-flask-api",
+  "version": "1.0.0",
+  "description": "Real world Flask API with serverless",
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "serverless-dynamodb-local": "^0.2.39",
+    "serverless-python-requirements": "^2.4.1",
+    "serverless-wsgi": "^1.7.5"
+  },
+  "devDependencies": {
+    "serverless": "^1.72.0",
+    "serverless-offline": "^6.3.0",
+    "serverless-offline-python": "^3.22.2"
+  },
+  "scripts": {
+    "set-debug": "set DEBUG=TRUE",
+    "db-install": "serverless dynamodb install",
+    "db-start": "serverless  dynamodb start --migrate",
+    "offline": "serverless offline --noPrependStageInUrl",
+    "debug-offline": "npm run set-debug && npm run offline"
+  }
+}

@@ -55,3 +55,5 @@ dev.db
 
 # Vagrant machines
 .vagrant/**
+
+node_modules
